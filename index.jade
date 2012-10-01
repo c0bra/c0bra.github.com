@@ -1,0 +1,161 @@
+!!! 5
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Brian Hann - Résumé
+    meta(name='description', content='Résumé of Web Developer & Software Enginneer Brian Hann')
+    meta(name='author', content='Brian Hann - brianhann.com')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', media='screen', href='styles.css')
+
+    // Modernizr on top to enable old browsers to render HTML5 markup 
+    script(src='modernizr.custom.15550.js')
+
+  body
+    header.vcard
+      h1.fn Brian Hann
+      h2.role Web Developer &amp; Software Engineer
+      ul.contact
+        li.email brianhann@gmail.com
+        li.tel 913.205.5068
+        li.url
+          a(href='http://www.brianhann.com', title='Brian Hann\'s Website') http://www.brianhann.com
+        li.adr
+          span.locality Kansas City, MO
+          | ,&nbsp;
+          span.country-name USA
+        //
+          <li class="url twitter">@c0brac0bra</li>
+
+    section#summary
+      h1 Summary
+      p
+        | Web Designer and Front-end Developer since 2003. Worked for agencies and as a freelancer for companies in Brazil, Europe and
+        | Asia.
+      p
+        | Focus on designing user interfaces for websites and developing semantic, responsive and reusable code aiming for
+        | best performance on browsers and devices.
+      p
+        | A programmer by education (graduated in Computer Science) and (interface) designer by heart.
+        | Also a blogger at jpedroribeiro.com, where several web related topics are written, from book reviews to how-to
+        | guides on development and design.
+
+    section#skills
+      h1 Skills
+      dl
+
+        dt Front-End Development
+        dd(title='Hyper Text Markup Language') HTML5
+        dd(title='Cascading Style Sheets') CSS3
+        dd(title='Front-end programming language') JavaScript
+        dd(title='Javascript Library') jQuery
+        //- dd(title='Ensuring website/app has usable experience on all platforms') Cross-browser Compatibility
+
+        dt Back-end &amp; Integration
+        dd(title='perl') perl
+        dd(title='node.js') node.js
+        dd(title='MS Web Framework') C# / Asp.Net
+        dd MySQL
+        dd Postgres
+        dd SQL Server
+        dd Mongodb
+        dd Redis
+
+        dt Systems &amp; Servers
+        dd Linux / *nix
+        dd Windows Server
+        dd Apache
+        dd Nginx
+        dd Cacti
+        dd Nagios
+
+        //
+          <dt>Design</dt>
+          <dd title="Design of websites on screen, tablets and mobiles">Web Design</dd>
+          <dd title="Design of interfaces for apps and web based systems">User Interface Design</dd>
+          <dd title="Sketching and wireframing using Balsamiq Mockup">Wireframing / Mockups</dd>
+          <dd title="Turning mockups into comps">Photoshop</dd> 
+
+        dt Others
+        dd(title='Git Source Control') git
+        dd(title='Subversion Source Control') subversion
+        dd(title='Microsoft Team Foundation Server') TFS
+
+    section#experience
+      h1 Work Experience
+      article
+        h1 Examinetics, Inc
+          //- span Occupational Health &amp; Safety
+        h2 Software Engineer / Web Developer
+        time.start(datetime='2008') 2008
+        span.end Present
+        p
+          | Working for several companies across the globe on a variety of areas as real estate, education counseling and online ticket selling.
+          br
+          | Most projects started as wireframes done with Balsamiq Mockups which later became full Photoshop comps.
+          br
+          | Front-end development using latest HTML5 and CSS3 techniques, backed by jQuery script to enable optimum user experience throughout the site.
+          br
+          | Wordpress used as a blog and as a full CMS: hand crafted themes, custom fields and menus to enable maximum adaptation for the customer and yet keeping it easy to use.
+          br
+          | Razor (Asp.Net) integration on custom built CMS (4pm.ie).
+
+      article
+        h1 Sprint
+          //- span Brazil
+        h2 Software Developer
+        time.start(datetime='2008') 2008
+        time.end(datetime='2006') 2006
+        p
+          | Worked with a team of perl developers to create a scaleable data processing and reporting system for information on field devices.
+          br
+          | System had to handle several million files daily, coming from
+          | many different systems around the nation. Data was highly volatile and required by many other groups for planning field upgrades and
+          | managing resource demands at the cell tower level.
+          | Other duties included requirements gathering and project planning.
+
+      article
+        h1
+          a(href='http://www.4pm.ie', title='4PM') 4PM
+          span Ireland
+        h2 Web Designer
+        time.start(datetime='2008-05-01') May 2008
+        time.end(datetime='2010-03-01') March 2010
+        p
+          | Spent 2 years living in Ireland as one of the main designers of the company, I was in charge of the design and front-end code of websites and web based systems.
+          br
+          | Attended meetings with clients and participated to initial project brainstorms.
+          br
+          | Also worked integrating designs into blog platforms (PHP), CMS and 4pm's in-house property interface (ASP.Net).
+          br
+          | After 2010, back in Brazil, continued working for them as a freelancer.
+
+      article
+        h1
+          a(href='http://www.copernicus.com.br', title='Copernicus Web Design') Copernicus Web Design
+          span Brazil
+        h2 Cofounder / Web Designer
+        time.start(datetime='2003-03-01') March 2003
+        time.end(datetime='2008-05-01') May 2008
+        p.
+          Copernicus started as an idea to bring the web environment to the town of Carlos Barbosa and its neighbour cities. Internet was new back then and our main role as a digital agency was to introduce this new concept to the companies around us.
+          As any small startup, my role was divided into several fields, like management, development and design. Later on focusing on design.
+          Even though I am not directly connected to the company, I still provide design services &amp; consultancy when needed.
+
+      //- section#education
+      //-     h1 Education
+      //-     h2 Universidade de Caxias do Sul
+      //-     p BS, Computer Science, 2000 - 2007
+
+    section#hobbies
+      h1 Hobbies &amp; Interests
+      ul
+        li Playing acoustic guitar and bass
+        li Homebrewing beer
+        li Road and trail cycling
+        li Cooking
+
+    // Script for enabling media queries on IE5+ 
+    script(src='css3-mediaqueries.js')
