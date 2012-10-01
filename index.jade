@@ -8,7 +8,10 @@ html.no-js(lang='en')
     meta(name='author', content='Brian Hann - brianhann.com')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700', rel='stylesheet', type='text/css')
+
     link(rel='stylesheet', media='screen', href='styles.css')
+    link(rel='stylesheet', href='libs/bootstrap/bootstrap.min.css')
+    link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.css')
 
     // Modernizr on top to enable old browsers to render HTML5 markup 
     script(src='modernizr.custom.15550.js')
@@ -19,9 +22,12 @@ html.no-js(lang='en')
       h2.role Software Engineer &amp; Web Developer
       ul.contact
         li.email
+          i.icon-envelope
           a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#114;&#105;&#97;&#110;&#46;&#104;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;')
             &#98;&#114;&#105;&#97;&#110;&#46;&#104;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-        li.tel 913.205.5068
+        li.tel
+          i.icon-phone
+          | 913.205.5068
         li.url
           a(href='http://brianhann.com', title='Brian Hann\'s Website') brianhann.com
         li.adr
@@ -96,23 +102,26 @@ html.no-js(lang='en')
         dd(title='JavaScript MVW framework') Angular
         dd(title='node.js web application framework') Express.js
 
-    section#experience
+    section.container-fluid#experience
       h1 Work Experience
       article
-        h1 Examinetics, Inc 
-          span Overland Park, KS
-        h2 Software Engineer / Web Developer
-        time.start(datetime='2008') 2008
-        span.end Present
-        p
-          | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
-          | MySQL maintenance and DBA work, bug tracking, and internal customer support.
-          br
-          | Also was a lead developer on team integrating a 3rd party replacement platform built on .NET and SQL Server into the company's infrastructure.
-          | Technologies used included C#, ASP.NET, ASP MVC3, Razor, WCF, and JS/jQuery.
-          br
-          | Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
-          | OS/package patching, and monitoring with Cacti and Nagios.
+        .row
+          .span2
+            time.start(datetime='2008') 2008
+            time.span.end Present
+          .span10
+            h1 Examinetics, Inc 
+              span Overland Park, KS
+            h2 Software Engineer / Web Developer
+            p
+              | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
+              | MySQL maintenance and DBA work, bug tracking, and internal customer support.
+              br
+              | Also was a lead developer on team integrating a 3rd party replacement platform built on .NET and SQL Server into the company's infrastructure.
+              | Technologies used included C#, ASP.NET, ASP MVC3, Razor, WCF, and JS/jQuery.
+              br
+              | Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
+              | OS/package patching, and monitoring with Cacti and Nagios.
 
       article
         h1 Sprint 
@@ -181,3 +190,4 @@ html.no-js(lang='en')
 
     // Script for enabling media queries on IE5+ 
     script(src='css3-mediaqueries.js')
+    script(src='libs/bootstrap/bootstrap.min.js')
