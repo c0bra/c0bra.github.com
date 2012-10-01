@@ -4,7 +4,7 @@ html.no-js(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     title Brian Hann - Résumé
-    meta(name='description', content='Résumé of Web Developer & Software Enginneer Brian Hann')
+    meta(name='description', content='Résumé of Software Enginneer & Web Developer Brian Hann')
     meta(name='author', content='Brian Hann - brianhann.com')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700', rel='stylesheet', type='text/css')
@@ -16,7 +16,7 @@ html.no-js(lang='en')
   body
     header.vcard
       h1.fn Brian Hann
-      h2.role Web Developer &amp; Software Engineer
+      h2.role Software Engineer &amp; Web Developer
       ul.contact
         li.email
           a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#114;&#105;&#97;&#110;&#46;&#104;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;')
@@ -37,20 +37,25 @@ html.no-js(lang='en')
         | Software and web developer since 1999. Worked in the banking, telecom, and health industries on external-facing websites,
         | internal web-based tools, backend data processing and ETL, and system administration.
       p
-        | Focus on designing and architechting elegant solutions to business problems, from the back-end of system setup and integration
+        | Focus on designing and architechting <strong>elegant solutions</strong> to business problems, from the back-end of system setup and integration
         | to front-end user experience.
       p
-        | Currently 
+        | Currently pursuing new technologies such as 
+        span.hoverme(title='Service Oriented Architecture') SOA
+        | , 
+        span.hoverme(title='Software as a Service') SaaS
+        | , and 
+        span.hoverme(title='Not Only SQL') NoSQL.
 
     section#skills
       h1 Skills
       dl
-
         dt Front-End Development
         dd(title='Hyper Text Markup Language') HTML5
         dd(title='Cascading Style Sheets') CSS3
         dd(title='Front-end programming language') JavaScript
         dd(title='Javascript Library') jQuery
+        dd Ajax
         //- dd(title='Ensuring website/app has usable experience on all platforms') Cross-browser Compatibility
 
         dt Back-end &amp; Integration
@@ -58,7 +63,11 @@ html.no-js(lang='en')
         dd Asp.Net MVC / Razor
         dd(title='node.js') node.js
         dd(title='perl') perl
-        dd(title='mod_perl') mod_perl
+        dd(title='perl web framework') Catalyst
+        dd(title='perl web micro-framework') Dancer
+        dd(title='PHP') PHP
+
+        dt Databases
         dd MySQL
         dd Postgres
         dd SQL Server
@@ -68,6 +77,7 @@ html.no-js(lang='en')
         dt Systems &amp; Servers
         dd Linux / *nix
         dd Apache
+        dd(title='mod_perl') mod_perl
         dd Nginx
         dd Cacti
         dd Nagios
@@ -87,17 +97,24 @@ html.no-js(lang='en')
     section#experience
       h1 Work Experience
       article
-        h1 Examinetics, Inc
-          //- span Occupational Health &amp; Safety
+        h1 Examinetics, Inc 
+          span Overland Park, KS
         h2 Software Engineer / Web Developer
         time.start(datetime='2008') 2008
         span.end Present
         p
-          | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information.
+          | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
+          | MySQL maintenance and DBA work, bug tracking, and internal customer support.
+          br
+          | Also was a lead developer on team integrating a 3rd party replacement platform built on .NET and SQL Server into the company's infrastructure.
+          | Technologies used included C#, ASP.NET, ASP MVC3, Razor, WCF, and JS/jQuery.
+          br
+          | Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
+          | OS/package patching, and monitoring with Cacti and Nagios.
 
       article
-        h1 Sprint
-          //- span Kansas City
+        h1 Sprint 
+          span Overland Park, KS
         h2 Software Developer
         time.start(datetime='2008') 2008
         time.end(datetime='2006') 2006
@@ -109,33 +126,30 @@ html.no-js(lang='en')
           | managing resource demands at the cell tower level.
           | Other duties included requirements gathering and project planning.
 
-      article.dobreak
-        h1 Sprint
-          //- span Kansas City
+      article
+        h1 US Bank 
+          span Overland Park, KS
         h2 Software Developer
-        time.start(datetime='2008') 2008
-        time.end(datetime='2006') 2006
+        time.start(datetime='04-2008') April 2008
+        time.end(datetime='08-2006') September 2006
         p
-          | Worked with a team of perl developers to create a scaleable data processing and reporting system for information on field devices.
+          | Worked as a developer with some system administrator duties on a project to
           br
-          | System had to handle several million files daily, coming from
-          | many different systems around the nation. Data was highly volatile and required by many other groups for planning field upgrades and
-          | managing resource demands at the cell tower level.
-          | Other duties included requirements gathering and project planning.
+          | integrate an air fuel payment system into US Bank’s environment. Framework
+          br
+          |was perl and XML with an Oracle back end.
 
-      article.nobreak
-        h1 Sprint
-          //- span Kansas City
-        h2 Software Developer
-        time.start(datetime='2008') 2008
-        time.end(datetime='2006') 2006
+      article
+        h1 UMB Bank 
+          span Kansas City, MO
+        h2 Software Engineer / Web Developer
+        time.start(datetime='04-2008') 1999
+        time.end(datetime='08-2006') April 2006
         p
-          | Worked with a team of perl developers to create a scaleable data processing and reporting system for information on field devices.
+          | Was Programmer/Analyst II on an application development team. Wrote perl and mod_perl apps for web and e-commerce projects.
           br
-          | System had to handle several million files daily, coming from
-          | many different systems around the nation. Data was highly volatile and required by many other groups for planning field upgrades and
-          | managing resource demands at the cell tower level.
-          | Other duties included requirements gathering and project planning.
+          |Also handled data processing and reporting tools. Duties also involved leading project planning and some system administration
+          | as well as supporting over 1000 different tools, scripts and apps.
 
       //- section#education
       //-     h1 Education
