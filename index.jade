@@ -9,9 +9,9 @@ html.no-js(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700', rel='stylesheet', type='text/css')
 
-    link(rel='stylesheet', media='screen', href='styles.css')
-    link(rel='stylesheet', href='libs/bootstrap/bootstrap.min.css')
+    //- link(rel='stylesheet', href='libs/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', media='screen', href='styles.css')
 
     // Modernizr on top to enable old browsers to render HTML5 markup 
     script(src='modernizr.custom.15550.js')
@@ -105,10 +105,14 @@ html.no-js(lang='en')
     section.container-fluid#experience
       h1 Work Experience
       article
+        .container
+          .row
+            .span1 Hi
+            .span11 There!
         .row
           .span2
             time.start(datetime='2008') 2008
-            time.span.end Present
+            time.end Present
           .span10
             h1 Examinetics, Inc 
               span Overland Park, KS
