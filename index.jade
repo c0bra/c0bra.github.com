@@ -43,15 +43,7 @@ html.no-js(lang='en')
         | Software and web developer since 1999. Worked in the banking, telecom, and health industries on external-facing websites,
         | internal web-based tools, backend data processing and ETL, and system administration.
       p
-        | Focus on designing and architechting <strong>elegant solutions</strong> to business problems, from the back-end of system setup and integration
-        | to front-end user experience.
-      p
-        | Currently pursuing new technologies such as 
-        span.hoverme(title='Service Oriented Architecture') SOA
-        | , 
-        span.hoverme(title='Software as a Service') SaaS
-        | , and 
-        span.hoverme(title='Not Only SQL') NoSQL.
+        | Focus on solving problems in new and elegant ways with software, from the back-end of system setup and data management to integration and front-end user experience.
 
     section#skills
       h1 Skills
@@ -62,15 +54,13 @@ html.no-js(lang='en')
         dd(title='Front-end programming language') JavaScript
         dd(title='Javascript Library') jQuery
         dd Ajax
+        dd AngularJS
         //- dd(title='Ensuring website/app has usable experience on all platforms') Cross-browser Compatibility
 
         dt Back-end &amp; Integration
-        dd C#
-        dd(title='MS Web Framework') Asp.Net MVC / Razor
-        dd(title='JavaScript-based highly scalable internet applications') node.js
-        dd(title='perl') perl
-        dd(title='perl web framework') Catalyst
-        dd(title='perl web micro-framework') Dancer
+        dd C# + Asp.Net MVC / Razor
+        dd(title='JavaScript-based highly scalable internet applications') node.js + Express
+        dd(title='perl') perl + Catalyst / Dancer
 
         dt Databases
         dd MySQL
@@ -95,33 +85,30 @@ html.no-js(lang='en')
 
         dt Others
         dd(title='Distrbuted Source Control Management') git
-        dd github
+        dd github / bitbucket
         dd(title='Subversion Source Control') Subversion
         dd(title='Microsoft Team Foundation Server') TFS
-        dd(title='JavaScript MVW framework') Angular
-        dd(title='node.js web application framework') Express.js
+        dd cvs
+        dd heroku / appfog / nodejitsu / pagodabox
 
     section#experience
       h1 Work Experience
 
-      article.container
-        .row
-          .span2
-            time.start(datetime='2008') 2008
-            time.end(datetime='now') Present
-          .span10
-            h1 Examinetics, Inc 
-              span Overland Park, KS
-            h2 Software Engineer / Web Developer
-            p
-              | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
-              | MySQL maintenance and DBA work, bug tracking, and internal customer support.
-              br
-              | Also was a lead developer on team integrating a 3rd party replacement platform built on .NET and SQL Server into the company's infrastructure.
-              | Technologies used included C#, ASP.NET, ASP MVC3, Razor, WCF, and JS/jQuery.
-              br
-              | Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
-              | OS/package patching, and monitoring with Cacti and Nagios.
+      article
+        h1 Examinetics, Inc 
+          span Overland Park, KS
+        h2 Software Engineer / Web Developer
+        time.start(datetime='2008') 2008
+        time.end(datetime='now') Present
+        p
+          | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
+          | MySQL maintenance and DBA work, bug tracking, and internal customer support.
+          br
+          | Also was a lead developer on team integrating a 3rd party replacement platform built on .NET and SQL Server into the company's infrastructure.
+          | Technologies used included C#, ASP.NET, ASP MVC3, Razor, JavaScript/jQuery, AngularJS, and ServiceStack.
+          br
+          | Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
+          | OS/package patching, and monitoring with Cacti and Nagios.
 
       article
         h1 Sprint 
@@ -166,11 +153,14 @@ html.no-js(lang='en')
       //-     p BS, Computer Science, 2000 - 2007
 
     section#oss
-      h1 Open Source projects
+      h1 Open Source and Side Projects
       ul
         li
-          a(href='https://github.com/c0bra/brewton') Brewton
-          |  Beer brewing and brewery management app written in node.js. Currently working on proof of concept.
+          a(href='http://beerwishlist.info') Beer Wishlist
+          |  Web app for sharing a "beer wishlist" with friends and family so they know what to you like when the occasion arrives.
+        li
+          a(href='https://github.com/c0bra/markdown-resume-js') markdown-resume
+          |  Node.js library that converts resumes in Markdown format into HTML and PDFs.
         li
           a(href='https://metacpan.org/module/Image::WordCloud') Image::WordCloud
           |  Perl module that generates 
@@ -183,10 +173,11 @@ html.no-js(lang='en')
     section#hobbies
       h1 Hobbies &amp; Interests
       ul
-        li Playing acoustic guitar and bass
-        li Homebrewing beer
-        li Road and trail cycling
         li Cooking
+        li Homebrewing beer
+        li Cycling
+        li Acoustic guitar and bass
+        
 
     // Script for enabling media queries on IE5+ 
     script(src='css3-mediaqueries.js')
