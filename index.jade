@@ -1,4 +1,4 @@
-!!! 5
+doctype html
 html.no-js(lang='en')
   head
     meta(charset='utf-8')
@@ -24,7 +24,7 @@ html.no-js(lang='en')
         li.email
           i.icon-envelope
           a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#114;&#105;&#97;&#110;&#46;&#104;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;')
-            &#98;&#114;&#105;&#97;&#110;&#46;&#104;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+            | &#98;&#114;&#105;&#97;&#110;&#46;&#104;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
         li.tel
           i.icon-phone
           | 913.205.5068
@@ -100,15 +100,27 @@ html.no-js(lang='en')
         h2 Software Engineer / Web Developer
         time.start(datetime='2008') 2008
         time.end(datetime='now') Present
-        p
-          | Maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
-          | MySQL maintenance and DBA work, bug tracking, and internal customer support.
-          br
-          | Also was a lead developer on team integrating a 3rd party replacement platform built on .NET and SQL Server into the company's infrastructure.
-          | Technologies used included C#, ASP.NET, ASP MVC3, Razor, JavaScript/jQuery, AngularJS, and ServiceStack.
-          br
-          | Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
-          | OS/package patching, and monitoring with Cacti and Nagios.
+        p.
+          Created an online health questionnaire system through which participants could receive OSHA clearance to wear respirator and other breathing apparatuses, with no
+          turn-around time. Technologies included C#, ASP.NET, JavaScript/jQuery, and SQL Server. Generated over $100,000 yearly.
+        br
+        p.
+          Designed and built several web-based tools for internal staff and external providers, including X-Ray processing and doctor interpretation, administration tools
+          for web sites, and a intermediate tool to sync a 3rd-party time tracking application and a 3rd-party trouble ticketing system. Technologies included C#,
+          ASP MVC, Razor, AngularJS, jQuery, and node.js.
+        br
+        br
+        p.
+          Created an automated data import system that handled information coming from off-site mobile personnel numbering in the hundreds.
+          Replaced many manual data entry processes and streamlined the process for resolving data issues, freeing company resources.
+        //- p.
+        //-   Also maintained a legacy perl + Mason + MySQL application that managed and reported on client's employee health information. Duties included
+        //-   MySQL maintenance and DBA work, bug tracking, and internal customer support.
+        br
+        br
+        p.
+          Was also system administrator and lead support for all Linux systems. Duties included new system setup, Active Directory integration,
+          OS/package patching, and monitoring with Cacti and Nagios.
 
       article
         h1 Sprint 
@@ -156,8 +168,8 @@ html.no-js(lang='en')
       h1 Open Source and Side Projects
       ul
         li
-          a(href='http://beerwishlist.info') Beer Wishlist
-          |  Web app for sharing a "beer wishlist" with friends and family so they know what to you like when the occasion arrives.
+          a(href='http://github.com/angular-ui/ng-grid') NG-Grid
+          |  Core committer to popular AngularJS data-grid project.  Provides many 
         li
           a(href='https://github.com/c0bra/markdown-resume-js') markdown-resume
           |  Node.js library that converts resumes in Markdown format into HTML and PDFs.
